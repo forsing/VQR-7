@@ -4,16 +4,20 @@ Variational Quantum Regressor
 """
 
 
-"""        
-=== System Information ===
-Python version                 3.11.13        
-macOS Apple                    Tahos 
-Apple                          M1
+"""
+| Paket                       | Verzija |
+| --------------------------- | ------- |
+| **python**                  | 3.11.13 |
+| **qiskit**                  | 1.4.4   |
+| **qiskit-machine-learning** | 0.8.3   |
+| **qiskit-ibm-runtime**      | 0.43.0  |
+| **macOS**                   | Tahos   |
+| **Apple**                   | M1      |
 """
 
 
 """
-Loto Skraceni Sistemi 
+Loto Skraceni Sistemi
 https://www.lotoss.info
 ABBREVIATED LOTTO SYSTEMS
 """
