@@ -1,5 +1,3 @@
-# https://medium.com/quantum-computing-and-ai-ml/variational-quantum-circuits-for-machine-learning-aa982a03605f
-
 """
 Variational Quantum Circuits
 Variational Quantum Regressor
@@ -29,7 +27,7 @@ algorithm_globals.random_seed = SEED
 
 
 # Učitavanje poslednjih 100 redova iz CSV fajla
-df = pd.read_csv("/Users/milan/Desktop/GHQ/data/loto7_4506_k87.csv", header=None)
+df = pd.read_csv("/data/loto7_4506_k87.csv", header=None)
 
 
 N = 7  # broj qubita = broj feature-a
@@ -103,16 +101,16 @@ Predikcija za broj 1: 1
 === Trening finalnog modela za POZICIJU 2 ===
 Predikcija za broj 2: 2
 === Trening finalnog modela za POZICIJU 3 ===
-Predikcija za broj 3: 3
+Predikcija za broj 3: x
 === Trening finalnog modela za POZICIJU 4 ===
-Predikcija za broj 4: 5
+Predikcija za broj 4: x
 === Trening finalnog modela za POZICIJU 5 ===
-Predikcija za broj 5: 8
+Predikcija za broj 5: x
 === Trening finalnog modela za POZICIJU 6 ===
 Predikcija za broj 6: 11
 === Trening finalnog modela za POZICIJU 7 ===
 Predikcija za broj 7: 15
 
 === Predviđena sledeća loto kombinacija 7/39 ===
-1 2 3 5 8 11 15
+1 2 x x x 11 15
 """
