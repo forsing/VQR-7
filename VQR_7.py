@@ -31,6 +31,8 @@ svih 4506 izvlacenja
 
 from qiskit.circuit.library import TwoLocal, ZFeatureMap
 from qiskit_machine_learning.algorithms import VQR
+
+from qiskit_algorithms.optimizers import COBYLA, SPSA
 from qiskit_algorithms.optimizers import ADAM
 
 from sklearn import model_selection
@@ -60,7 +62,10 @@ N = 7  # broj qubita = broj feature-a
 
 feature_map = ZFeatureMap(feature_dimension=N, reps=1)
 ansatz = TwoLocal(num_qubits=N, rotation_blocks='ry', entanglement='cz', reps=2)
-optimizer = ADAM(maxiter=150, lr=0.1)
+
+optimizer = COBYLA(maxiter=300, tol=1e-6)
+# optimizer = SPSA(maxiter=300)
+# optimizer = ADAM(maxiter=150, lr=0.1)
 
 
 # =======================================
