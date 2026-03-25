@@ -45,7 +45,7 @@ algorithm_globals.random_seed = SEED
 
 
 # Učitavanje poslednjih 100 redova iz CSV fajla
-df = pd.read_csv("/Users/4c/Desktop/GHQ/data/loto7_4586_k24.csv", header=None)
+df = pd.read_csv("/data/loto7_4586_k24.csv", header=None)
  
 
 N = 7  # broj qubita = broj feature-a
